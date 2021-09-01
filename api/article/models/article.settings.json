@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "name": "Article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "featuredImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "metaDescription": {
+      "type": "string",
+      "required": true
+    },
+    "keywords": {
+      "type": "string",
+      "required": false
+    },
+    "alt": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "text"
+    },
+    "author": {
+      "type": "enumeration",
+      "enum": [
+        "Ad_Kraft",
+        "Ilijana_Jovic",
+        "Aleksandar_culum",
+        "Stefan_Dragicevic"
+      ]
+    },
+    "published": {
+      "type": "date",
+      "required": true
+    },
+    "category": {
+      "via": "articles",
+      "model": "categories"
+    }
+  }
+}
