@@ -16,8 +16,9 @@
       "type": "string"
     },
     "articles": {
-      "via": "category",
-      "collection": "article"
+      "via": "categories",
+      "collection": "article",
+      "dominant": true
     },
     "slug": {
       "type": "uid",
