@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "Tags",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "articles": {
+      "collection": "article",
+      "via": "tags",
+      "dominant": true
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

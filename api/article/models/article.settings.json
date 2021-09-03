@@ -65,6 +65,10 @@
     "categories": {
       "via": "articles",
       "collection": "categories"
+    },
+    "tags": {
+      "via": "articles",
+      "collection": "tags"
     }
   }
 }
