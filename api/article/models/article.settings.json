@@ -62,9 +62,13 @@
       "type": "date",
       "required": true
     },
-    "category": {
+    "categories": {
       "via": "articles",
-      "model": "categories"
+      "collection": "categories"
+    },
+    "tags": {
+      "via": "articles",
+      "collection": "tags"
     }
   }
 }
