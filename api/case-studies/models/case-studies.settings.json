@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "name": "Case Studies",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "featuredImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "metaDescription": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "Author": {
+      "type": "enumeration",
+      "enum": [
+        "Ad_Kraft",
+        "Ilijana_Jovic",
+        "Aleksandar_culum",
+        "Stefan_Dragicevic"
+      ]
+    },
+    "published": {
+      "type": "date"
+    },
+    "Client": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Budget": {
+      "type": "string"
+    },
+    "thumbnailImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "case_studies_categories": {
+      "via": "case_studies",
+      "collection": "case-studies-categories"
+    }
+  }
+}

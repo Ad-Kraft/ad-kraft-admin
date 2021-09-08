@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/case-studies-categories",
+      "handler": "case-studies-categories.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/case-studies-categories/count",
+      "handler": "case-studies-categories.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/case-studies-categories/:id",
+      "handler": "case-studies-categories.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/case-studies-categories",
+      "handler": "case-studies-categories.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/case-studies-categories/:id",
+      "handler": "case-studies-categories.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/case-studies-categories/:id",
+      "handler": "case-studies-categories.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
