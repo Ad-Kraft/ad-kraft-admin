@@ -19,8 +19,8 @@
       "targetField": "title"
     },
     "case_studies": {
-      "collection": "case-studies",
       "via": "case_studies_categories",
+      "collection": "case-studies",
       "dominant": true
     }
   }

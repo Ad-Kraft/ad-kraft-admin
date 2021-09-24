@@ -19,9 +19,6 @@
       "type": "uid",
       "targetField": "title"
     },
-    "content": {
-      "type": "richtext"
-    },
     "featuredImage": {
       "model": "file",
       "via": "related",
@@ -79,6 +76,57 @@
     "case_studies_categories": {
       "via": "case_studies",
       "collection": "case-studies-categories"
+    },
+    "introText": {
+      "type": "richtext"
+    },
+    "challengeText": {
+      "type": "richtext"
+    },
+    "solutionText": {
+      "type": "richtext"
+    },
+    "resultText": {
+      "type": "richtext"
+    },
+    "clientMessage": {
+      "type": "richtext"
+    },
+    "challengeImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "solutionImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "resultImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
